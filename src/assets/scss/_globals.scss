@@ -68,3 +68,8 @@ button.empty{
 button.full{
     background-color: $blue-lagoon;
 }
+
+span.shown{
+    background-color: rgba($blue-lagoon, $alpha: .5);
+    padding: 0 .5rem;
+}
