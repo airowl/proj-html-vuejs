@@ -51,3 +51,20 @@ p.uppercase{
 .text-blue-lagoon{
     color: $blue-lagoon;
 }
+
+button{
+    text-transform: uppercase;
+    padding: .75rem 1.3rem;
+    color: $white;
+    border: none;
+    border-radius: .4rem;
+}
+
+button.empty{
+    border: 1px solid $blue-lagoon;
+    background: transparent;
+}
+
+button.full{
+    background-color: $blue-lagoon;
+}

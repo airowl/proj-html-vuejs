@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+
     <!-- HEADER -->
     <Header />
 
@@ -8,8 +9,13 @@
 
     <!-- FOOTER -->
     <Footer />
-
     
+    <button class="empty">
+      Read more
+    </button>
+    <button class="full">
+      Get in touch
+    </button>
   </div>
 </template>
 
