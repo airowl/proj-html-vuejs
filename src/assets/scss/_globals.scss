@@ -22,6 +22,10 @@ h3{
     font-weight: 600;
 }
 
+li{
+    list-style-type: none;
+}
+
 a{
     text-decoration: none;
 }
@@ -72,6 +76,18 @@ button.full{
 span.shown{
     background-color: rgba($blue-lagoon, $alpha: .5);
     padding: 0 .5rem;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 0;
 }
 
 @mixin flex($flex-direction, $justify-content, $align-items) {
