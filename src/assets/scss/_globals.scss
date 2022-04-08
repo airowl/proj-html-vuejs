@@ -40,6 +40,10 @@ p.uppercase{
     font-weight: 600;
 }
 
+.uppercase{
+    text-transform: uppercase;
+}
+
 .text-white{
     color: $white;
 }
@@ -56,20 +60,21 @@ p.uppercase{
     color: $blue-lagoon;
 }
 
-button{
+a.btn{
     text-transform: uppercase;
     padding: .75rem 1.3rem;
     color: $white;
     border: none;
     border-radius: .4rem;
+    display: inline-block;
 }
 
-button.empty{
+a.btn.empty{
     border: 1px solid $blue-lagoon;
     background: transparent;
 }
 
-button.full{
+a.btn.full{
     background-color: $blue-lagoon;
 }
 

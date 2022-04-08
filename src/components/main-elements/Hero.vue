@@ -9,15 +9,21 @@
                         <img src="../../assets/images/nexgen-logo.svg" alt="Logo SVG">
                     </div>
                     <ul class="col-7">
-                        
                         <li>
-                            <button class="full">
-                                <a href="#" class="text-white">Get in touch</a>
-                            </button>
+                            
+                        </li>
+                        <li>
+                            <a href="#" class="text-white">
+                                <font-awesome-icon icon="fa-regular fa-user" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn full uppercase">get in touch</a>
                         </li>
                     </ul>
                 </nav>
             </div>
+            
         </header>
         <!-- hero content -->
         <div class="hero-content">
@@ -80,7 +86,13 @@ export default {
                     height: 2rem;
                 }
 
-                
+                ul{
+                    @include flex(row, center, center);
+
+                    li:not(:last-child){
+                        margin-right: 2rem;
+                    }
+                }
             }
         }
     }
