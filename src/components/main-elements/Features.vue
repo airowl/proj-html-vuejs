@@ -26,7 +26,9 @@
 
             <div class="features-cards">
                 <div class="row">
-                    <CardFeature />
+                    <CardFeature 
+                        
+                    />
                 </div>
             </div>
         </div>
