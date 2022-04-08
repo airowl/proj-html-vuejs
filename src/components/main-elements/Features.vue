@@ -26,7 +26,6 @@
 
             <div class="features-cards">
                 <div class="row">
-                    
                     <CardFeature />
                 </div>
             </div>
@@ -41,6 +40,43 @@ export default {
     name: 'sectionFeatures',
     components: {
         CardFeature
+    },
+    data: function(){
+        return{
+            featuresElements: [
+                {
+                    iconName: 'fa-desktop',
+                    iconForm: 'asd',
+                    title: 'Audit & Assurance',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit'
+                },
+                {
+                    iconName: 'fa-brief-case',
+                    title: 'Financial Advisory',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit'
+                },
+                {
+                    iconName: 'fa-chart-simple',
+                    title: 'Analytics and M&A',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit'
+                },
+                {
+                    iconName: 'fa-plane-up',
+                    title: 'Middle Marketing',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit'
+                },
+                {
+                    iconName: 'fa-earth-asia',
+                    title: 'Legal Consulting',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit'
+                },
+                {
+                    iconName: 'fa-folder-open',
+                    title: 'Regulatory Risk',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit'
+                }
+            ]
+        }
     }
 }
 </script>
@@ -54,6 +90,7 @@ export default {
         color: $white;
 
         #features-text{
+            margin-bottom: 2rem;
                 
             p{
                 margin-bottom: 1rem;
