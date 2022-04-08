@@ -1,7 +1,7 @@
 <template>
     <div id="card-feature">
         <div class="icons">
-            <span class="icon-left"><font-awesome-icon icon="fa-solid fa-desktop" /></span>
+            <span class="icon-left"><font-awesome-icon icon="fa-regular fa-desktop" /></span>
             <font-awesome-icon class="icon-right" icon="fa-solid fa-arrow-right" />
         </div>
         <h3 class="text-white">Audit & Assurance</h3>

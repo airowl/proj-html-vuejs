@@ -46,7 +46,6 @@ export default {
             featuresElements: [
                 {
                     iconName: 'fa-desktop',
-                    iconForm: 'asd',
                     title: 'Audit & Assurance',
                     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit'
                 },
