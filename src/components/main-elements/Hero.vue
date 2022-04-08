@@ -9,8 +9,10 @@
                         <img src="../../assets/images/nexgen-logo.svg" alt="Logo SVG">
                     </div>
                     <ul class="col-7">
-                        <li>
-                            
+                        <li v-for="(element, index) in navBarLinks" :key="index">
+                            <a :href="element.url" class="uppercase text-white">
+                                {{element.text}}
+                            </a>
                         </li>
                         <li>
                             <a href="#" class="text-white">
@@ -81,16 +83,17 @@ export default {
 
             nav.row{
                 @include flex(row, space-between, center);
+                padding: 1rem 0;
 
                 img{
-                    height: 2rem;
+                    height: 3rem;
                 }
 
                 ul{
                     @include flex(row, center, center);
 
                     li:not(:last-child){
-                        margin-right: 2rem;
+                        margin-right: 3rem;
                     }
                 }
             }
