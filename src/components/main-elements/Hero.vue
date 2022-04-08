@@ -28,8 +28,22 @@
             
         </header>
         <!-- hero content -->
-        <div class="hero-content">
+        <div id="hero-content">
+            <div class="hero-elements">
+                <h1>Financial Risk</h1>
 
+                <p>The right outcomes depend on continuous rigor in governance, models, and processes across the finance function.</p>
+
+                <div class="hero-buttons">
+                    <a href="#" class="btn full">
+                        get in touch
+                    </a>
+                    <a href="#" class="btn empty">
+                        read more
+                    </a>
+                </div>
+
+            </div>
         </div>
     </section>
 </template>
@@ -77,9 +91,12 @@ export default {
         color: $white;
         position: relative;
 
-        header{
+        header, div#hero-content{
             position: relative;
             z-index: 1;
+        }
+
+        header{
 
             nav.row{
                 @include flex(row, space-between, center);
@@ -94,6 +111,30 @@ export default {
 
                     li:not(:last-child){
                         margin-right: 3rem;
+                    }
+                }
+            }
+        }
+
+        div#hero-content{
+            height: calc(100% - 85px);
+
+            div.hero-elements{
+                text-align: center;
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 30%;
+
+                p{
+                    margin: 2rem 0;
+                }
+
+                div.hero-buttons{
+                    
+                    a:not(:last-child){
+                        margin-right: 1.5rem;
                     }
                 }
             }
