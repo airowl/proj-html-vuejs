@@ -5,18 +5,26 @@
                 <div class="col-xs-6">
                     <div id="news-letter-heading" class="heading-without-btn">
 
-                        <p class="uppercase">our editorial content</p>
-                        <h2>
-                            Latest 
-                            <span class="shown text-blue-lagoon">News</span>
+                        <p class="uppercase">newsletter</p>
+                        <h2 class="text-white">
+                            <span class="shown">Know</span> 
+                            First
                         </h2>
-                        <p class="description">
-                            Every week we publish content about what is best in the business world.
+                        <p class="description text-white">
+                            Follow closely and receive content about our company and the news of the current market.
                         </p>
                         
                     </div>
                 </div>
-                <div class="col-xs-6"></div>
+                <div class="col-xs-6">
+                    <form action="">
+                        <input type="text" placeholder="Name" name="firstname">
+                        <input type="email" placeholder="Email" name="email">
+                        <button class="uppercase">
+                            subscribe
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -32,10 +40,42 @@ export default {
 @import '../../assets/scss/style.scss';
 
     section#news-letter{
+        background-color: $wood-smoke;
+        padding: 8rem 0;
 
-        div.col-xs-6{
-            border: 1px solid red;
-        }        
+        div.container{
+            width: 50%;
+
+            div#news-letter-heading{
+                margin-right: 1rem
+            }
+
+            form{
+                @include flex(column, center, center);
+
+                input{
+                    width: 100%;
+                    margin-bottom: 1rem;
+                    border-radius: .3rem;
+                    border: none;
+                    padding: 1rem;
+                    background-color: rgba($white, $alpha: .1);
+                    color: $white;
+                    font-family: 'Montserrat', sans-serif;
+                }
+
+                button{
+                    align-self: flex-start;
+                    padding: .75rem 1.3rem;
+                    color: $white;
+                    border: none;
+                    border-radius: .2rem;
+                    display: inline-block;
+                    background-color: $blue-lagoon;
+                    font-family: 'Montserrat', sans-serif;
+                }
+            }
+        }     
     }
 
 
