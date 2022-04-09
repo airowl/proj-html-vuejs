@@ -25,8 +25,18 @@
                     </div>
                 </div>
 
-                <div class="col-xs-4" id="president-speech">
-
+                <div class="col-xs-4 text-white" id="president-speech">
+                    <h3 >President Speech</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam velit odit quis repudiandae, amet aliquam error impedit exercitationem.
+                        <br>
+                        <br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, quam odio? Omnis error voluptatem dolor hic voluptas eaque minus rem laudantium rerum delectus quibusdam, aperiam consequuntur, consectetur sapiente fugiat nemo.
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis autem magnam facere iusto quos, quod, animi itaque accusantium.
+                    </p>
+                    <h5>T. Johnson</h5>
                 </div>
 
             </div>
@@ -152,6 +162,16 @@ export default {
 
         #president-speech{
             background-color: $blue-lagoon;
+            border-radius: .5rem;
+            padding: 4rem 2rem;
+
+            h3{
+                margin-bottom: 1rem;
+            }
+
+            p{
+                margin-bottom: 1rem;
+            }
 
         }
     }
