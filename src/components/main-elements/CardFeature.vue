@@ -14,7 +14,7 @@
 export default {
     name: 'cardFeature',
     props: {
-        element: Object
+        element: Array
     }
 }
 </script>
