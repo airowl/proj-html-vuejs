@@ -2,16 +2,17 @@
     <section id="features">
         <div class="container">
 
-            <div id="features-text">
+            <div id="features-text" class="heading-with-btn">
+
                 <p class="uppercase">our business areas</p>
                 <h2>
                     Excellence in 
                     <span class="shown">Services</span>
                 </h2>
 
-                <div class="row">
+                <div class="p-btn">
                     <div>
-                        <p>
+                        <p class="text-white">
                             We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of <br> experienced and renowned professionals. There are some options that you can hire.
                         </p>
                     </div>
@@ -21,6 +22,7 @@
                         </a>
                     </div>
                 </div>
+                
             </div>
 
             <div id="features-cards" class="row">
@@ -88,22 +90,6 @@ export default {
         padding: 10rem 0;
         background-color: $wood-smoke;
         color: $white;
-
-        #features-text{
-            margin-bottom: 2rem;
-                
-            p{
-                margin-bottom: 1rem;
-            }
-
-            h2{
-                margin-bottom: 2rem;
-            }
-
-            div.row{
-                @include flex(row, space-between, center)
-            }
-        }
 
         #features-cards{
             gap: 1.5rem;

@@ -16,7 +16,6 @@
                         Ethics and integrity are the bases on which out professionals build their careers. <br> They are fundamentals that become daily attitudes.
                     </p>
                     <div class="gallery-team row">
-                        <!-- components -->
                         <CardMember 
                             v-for="(element, index) in teamMembers"
                             :key="index"
@@ -76,7 +75,7 @@ export default {
                     ]
                 },
                 {
-                    profilePhoto: require('../../assets/images/team-2.jpg'),
+                    profilePhoto: require('../../assets/images/team-3.jpg'),
                     firstName: 'oliver',
                     lastName: 'jones',
                     role: 'chief procurement',
@@ -96,7 +95,7 @@ export default {
                     ]
                 },
                 {
-                    profilePhoto: require('../../assets/images/team-3.jpg'),
+                    profilePhoto: require('../../assets/images/team-2.jpg'),
                     firstName: 'emma',
                     lastName: 'lopez',
                     role: 'chief marketing',

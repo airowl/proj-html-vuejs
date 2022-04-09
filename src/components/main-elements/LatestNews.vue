@@ -2,14 +2,15 @@
     <section id="latest-news">
         <div class="container">
 
-            <div id="latest-news-text">
+            <div id="latest-news-text" class="heading-with-btn">
+
                 <p class="uppercase">our editorial content</p>
                 <h2>
                     Latest 
-                    <span class="shown">News</span>
+                    <span class="shown text-blue-lagoon">News</span>
                 </h2>
 
-                <div class="row">
+                <div class="p-btn">
                     <div>
                         <p>
                             Every week we publish content about what is best in the business world.
@@ -21,6 +22,7 @@
                         </a>
                     </div>
                 </div>
+                
             </div>
 
             <div class="gallery-news">
@@ -73,22 +75,6 @@ export default {
     section#latest-news{
         background-color: rgba($silver-sand, $alpha: .2);
         padding: 8rem 0;
-
-        div#latest-news-text{
-            margin-bottom: 4rem;
-                
-            p{
-                margin-bottom: 1rem;
-            }
-
-            h2{
-                margin-bottom: 2rem;
-            }
-
-            div.row{
-                @include flex(row, space-between, center)
-            }
-        }
 
         .gallery-news{
             @include flex(row, space-between, center)
