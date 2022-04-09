@@ -1,11 +1,11 @@
 <template>
     <div id="card-feature">
         <div class="icons">
-            <span class="icon-left"><i class="fa fa-desktop"></i></span>
-            
+            <span class="icon-left"><i class="fa" :class="element.iconName"></i></span>
+            <i class="fas fa-arrow-right"></i>
         </div>
-        <h3 class="text-white">Audit & Assurance</h3>
-        <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <h3 class="text-white">{{element.title}}</h3>
+        <p class="text-white">{{element.description}}</p>
         
     </div>
 </template>
@@ -13,7 +13,9 @@
 <script>
 export default {
     name: 'cardFeature',
-    props: ['element']
+    props: {
+        element: Object
+    }
 }
 </script>
 

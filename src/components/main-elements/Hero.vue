@@ -16,7 +16,7 @@
                         </li>
                         <li>
                             <a href="#" class="text-white">
-                                <font-awesome-icon icon="fa-regular fa-user" />
+                                <i class="fa-regular fa-user"></i>
                             </a>
                         </li>
                         <li>

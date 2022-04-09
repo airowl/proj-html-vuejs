@@ -5,21 +5,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <p><font-awesome-icon icon="fa-solid fa-clock" />  Open Hours: Mon - Sat - 9:00 - 18:00</p>
+                    <p><i class="fa-solid fa-clock"></i>  Open Hours: Mon - Sat - 9:00 - 18:00</p>
                 </div>
                 <div class="col-6" id="header-right-side">
                     <p>
-                        <font-awesome-icon icon="fa-solid fa-phone" />  
+                        <i class="fa-solid fa-phone"></i>  
                         +1 (305) 1234-5678
                         </p>
                     <p>
-                        <font-awesome-icon icon="fa-solid fa-envelope" />  
+                        <i class="fa-solid fa-envelope"></i>  
                         hello@example.com
                     </p>
                     <div class="header-social-links">
-                        <font-awesome-icon icon="fa-brands fa-facebook-f" />
-                        <span><font-awesome-icon icon="fa-brands fa-twitter" /></span>
-                        <font-awesome-icon icon="fa-brands fa-linkedin-in" />
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
                     </div>
                     
                 </div>
@@ -54,7 +54,7 @@ export default {
                         margin-right: 1.75rem;
                     }
                     
-                    .header-social-links > span{
+                    .header-social-links > i:nth-child(2){
                         margin: 0 2rem;
                     }
                 }

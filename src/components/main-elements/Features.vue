@@ -10,27 +10,25 @@
                 </h2>
 
                 <div class="row">
-                    <div class="col-xs-10">
-                        <p class="col-xs-10">
+                    <div>
+                        <p>
                             We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of <br> experienced and renowned professionals. There are some options that you can hire.
                         </p>
                     </div>
-                    <div class="col-xs-2">
+                    <div>
                         <a href="#" class="btn empty uppercase">
                             see all
                         </a>
                     </div>
                 </div>
-
             </div>
 
-            <div class="features-cards">
-                <div class="row">
-                    <CardFeature 
-                        
-                    />
-                    
-                </div>
+            <div id="features-cards" class="row">
+                <CardFeature 
+                    v-for="(element, index) in featuresElements"
+                    :key="index"
+                    :element="element"
+                />
             </div>
         </div>
     </section>
@@ -53,7 +51,7 @@ export default {
                     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit'
                 },
                 {
-                    iconName: 'fa-brief-case',
+                    iconName: 'fa-briefcase',
                     title: 'Financial Advisory',
                     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit'
                 },
@@ -87,7 +85,7 @@ export default {
 @import '../../assets/scss/style.scss';
 
     section#features{
-        padding: 4rem 0;
+        padding: 10rem 0;
         background-color: $wood-smoke;
         color: $white;
 
@@ -102,7 +100,15 @@ export default {
                 margin-bottom: 2rem;
             }
 
+            div.row{
+                @include flex(row, space-between, center)
+            }
         }
+
+        #features-cards{
+            gap: 1.5rem;
+        }
+
     }
 
 </style>
