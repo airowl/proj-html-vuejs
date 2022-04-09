@@ -1,12 +1,12 @@
 <template>
     <div id="card-feature">
         <div class="icons">
-            <span class="icon-left"><font-awesome-icon icon="fa-regular fa-display" /></span>
-            <font-awesome-icon class="icon-right" icon="fa-solid fa-arrow-right" />
+            <span class="icon-left"><i class="fa fa-desktop"></i></span>
+            
         </div>
         <h3 class="text-white">Audit & Assurance</h3>
         <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        <font-awesome-icon icon="fa-regular fa-chart-simple" />
+        
     </div>
 </template>
 
