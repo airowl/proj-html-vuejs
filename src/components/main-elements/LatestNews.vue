@@ -72,7 +72,7 @@ export default {
 
     section#latest-news{
         background-color: rgba($silver-sand, $alpha: .2);
-        padding: 8rem;
+        padding: 8rem 0;
 
         div#latest-news-text{
             margin-bottom: 4rem;
