@@ -8,17 +8,17 @@ body{
 }
 
 h1{
-    font-size: 4rem;
+    font-size: $fnt-h-lg;
     font-weight: 800;
 }
 
 h2{
-    font-size: 3rem;
+    font-size: $fnt-h-md;
     font-weight: 700;
 }
 
 h3{
-    font-size: 1rem;
+    font-size: $fnt-h-sm;
     font-weight: 600;
 }
 
@@ -31,13 +31,14 @@ a{
 }
 
 p, li{
-    font-size: .8rem;
+    font-size: $fnt-p-md;
 }
 
 p.uppercase{
     text-transform: uppercase;
     color: $fountain-blue;
     font-weight: 600;
+    font-size: $fnt-p-sm;
 }
 
 .uppercase{
@@ -120,7 +121,7 @@ div.heading-with-btn{
 
         p{
             color: $salt-box;
-            font-size: 16px;
+            font-size: $fnt-p-md;
         }
     }
 }
@@ -138,7 +139,7 @@ div.heading-without-btn{
     }
 
     p.description{
-        font-size: 16px;
+        font-size: $fnt-p-md;
     }
 
 }
