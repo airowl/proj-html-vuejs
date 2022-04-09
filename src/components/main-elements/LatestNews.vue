@@ -25,7 +25,9 @@
 
             <div class="gallery-news">
                 <CardNews 
-                
+                    v-for="(element, index) in newsList"
+                    :key="index"
+                    :element="element"
                 />
             </div>
 
@@ -41,7 +43,27 @@ export default {
     components: {
         CardNews
     },
-    
+    data: function(){
+        return{
+            newsList: [
+                {
+                    id: 1,
+                    bgImage: require('../../assets/images/news-1.jpg'),
+                    text: 'Increasing creativity is possible for everyone'
+                },
+                {
+                    id: 2,
+                    bgImage: require('../../assets/images/news-2.jpg'),
+                    text: 'Because market research in part of the business plan'
+                },
+                {
+                    id: 3,
+                    bgImage: require('../../assets/images/news-3.jpg'),
+                    text: 'Working from home is now a trend'
+                }
+            ]
+        }
+    }
 }
 </script>
 
@@ -66,6 +88,10 @@ export default {
             div.row{
                 @include flex(row, space-between, center)
             }
+        }
+
+        .gallery-news{
+            @include flex(row, space-between, center)
         }
     }
 

@@ -1,14 +1,17 @@
 <template>
     <div id="card-news">
-        <img src="../../assets/images/news-1.jpg" alt="">
+        <img :src="element.bgImage" :alt="`News n. ${element.id}`">
         <div class="overlay"></div>
-        <h3>Increasing creativity is possible for everyone</h3>
+        <h3>{{element.text}}</h3>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'cardNews'
+    name: 'cardNews',
+    props: {
+        element: Object
+    }
 }
 </script>
 
