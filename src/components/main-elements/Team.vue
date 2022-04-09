@@ -18,7 +18,6 @@
                     <div class="gallery-team row">
                         <!-- components -->
                         <CardMember 
-                            class="col-xs-6"
                             v-for="(element, index) in teamMembers"
                             :key="index"
                             :element="element"
@@ -26,7 +25,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-4">
+                <div class="col-xs-4" id="president-speech">
 
                 </div>
 
@@ -47,7 +46,7 @@ export default {
         return{
             teamMembers: [
                 {
-                    profilePhoto: '../../assets/images/team-1.jpg',
+                    profilePhoto: require('../../assets/images/team-1.jpg'),
                     firstName: 'david',
                     lastName: 'cooper',
                     role: 'cto & co-founder',
@@ -67,7 +66,7 @@ export default {
                     ]
                 },
                 {
-                    profilePhoto: '../../assets/images/team-2.jpg',
+                    profilePhoto: require('../../assets/images/team-2.jpg'),
                     firstName: 'oliver',
                     lastName: 'jones',
                     role: 'chief procurement',
@@ -87,7 +86,7 @@ export default {
                     ]
                 },
                 {
-                    profilePhoto: '../../assets/images/team-3.jpg',
+                    profilePhoto: require('../../assets/images/team-3.jpg'),
                     firstName: 'emma',
                     lastName: 'lopez',
                     role: 'chief marketing',
@@ -107,7 +106,7 @@ export default {
                     ]
                 },
                 {
-                    profilePhoto: '../../assets/images/team-4.jpg',
+                    profilePhoto: require('../../assets/images/team-4.jpg'),
                     firstName: 't.',
                     lastName: 'johnson',
                     role: 'ceo & president',
@@ -148,6 +147,12 @@ export default {
 
         .gallery-team{
             margin-top: 2rem;
+            gap: 3rem;
+        }
+
+        #president-speech{
+            background-color: $blue-lagoon;
+
         }
     }
 

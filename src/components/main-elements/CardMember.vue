@@ -1,17 +1,17 @@
 <template>
     <div id="card-member">
-        <img src="../../assets/images/team-1.jpg" alt="">
+        <img :src="element.profilePhoto" :alt="element.firstName + element.lastName">
         <div class="data-member">
-            <h5>David Cooper</h5>
-            <p class="uppercase">CTO & founder</p>
+            <h5>{{getFirstLetterUpper(element.firstName)}} {{getFirstLetterUpper(element.lastName)}}</h5>
+            <p class="uppercase">{{element.role}}</p>
             <div class="social-links">
-                <a href="#" class="icon">
+                <a :href="element.socialLinks[0].urlProfile" class="icon">
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
-                <a href="#" class="icon">
+                <a :href="element.socialLinks[1].urlProfile" class="icon">
                     <i class="fa-brands fa-twitter"></i>
                 </a>
-                <a href="#" class="icon">
+                <a :href="element.socialLinks[2].urlProfile" class="icon">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
             </div>
@@ -24,7 +24,12 @@
 export default {
     name: 'cardMember',
     props: {
-        element: Array
+        element: Object
+    },
+    methods: {
+        getFirstLetterUpper(string){
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        }
     }
 }
 </script>
@@ -34,7 +39,7 @@ export default {
 
     div#card-member{
         @include flex(row, static, center);
-        margin-bottom: 3rem;
+        width: calc((100% / 2) - 3rem);
         
         img{
             width: 25%;
@@ -47,6 +52,7 @@ export default {
 
             h5{
                 font-size: 1.2rem;
+                margin-bottom: .5rem;
             }
 
             p{
