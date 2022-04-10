@@ -2,7 +2,7 @@
     <section id="form-contact">
         <div class="container">
             <div class="row">
-                <div class="col-xs-7">
+                <div class="col-xs-8">
                     <div id="form-contact-heading" class="heading-without-btn">
 
                         <p class="uppercase">send a message</p>
@@ -30,8 +30,36 @@
 
                     </form>
                 </div>
-                <div class="col-xs-5">
 
+                <div class="col-xs-4">
+                    <h3>Example Inc.</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+
+                    <div class="data">
+                        <a href="#" class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <span class="text-blue-lagoon">+1 (305) 1234-5678</span>
+                    </div>
+                    <div class="data">
+                        <a href="#" class="icon">
+                            <i class="fa-solid fa-envelope"></i>  
+                        </a>
+                        <span class="text-blue-lagoon">hello@example.com</span>
+                    </div>
+                    <div class="data">
+                        <a href="#" class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </a>
+                        <span class="text-blue-lagoon">Main Avenue, 987</span>
+                    </div>
+
+                    <a href="#" class="text-blue-lagoon btn empty">view map</a>
                 </div>
             </div>
         </div>
@@ -79,6 +107,32 @@ export default {
                 background-color: rgba($abbey, $alpha: .1);
             }
         }
+
+        div.col-xs-4{
+            padding-left: 2rem;
+
+            h3{
+                margin-bottom: 1rem;
+            }
+
+            div.data{
+                margin-top: 1rem;
+
+                span{
+                    margin-left: 1rem;
+                }
+            }
+
+            a.btn{
+                margin-top: 2rem;
+            }
+
+            
+
+        }
+        
+
+        
     }
 
 

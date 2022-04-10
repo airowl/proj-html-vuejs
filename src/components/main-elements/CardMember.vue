@@ -62,20 +62,10 @@ export default {
 
             div.social-links{
                 margin-top: 1rem;
+                    
 
-                a.icon{
-                    display: inline-block;
-                    width: 2.5rem;
-                    height: 2.5rem;
-                    border-radius: 50%;
-                    background-color: rgba($blue-lagoon, $alpha: .2);
-                    color: $blue-lagoon;
-                    text-align: center;
-                    line-height: 2.5rem;
-
-                    &:nth-child(2){
-                        margin: 0 .4rem;
-                    }
+                a.icon:nth-child(2){
+                    margin: 0 .4rem;
                 }
             }
         }

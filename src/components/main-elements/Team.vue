@@ -30,10 +30,10 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam velit odit quis repudiandae, amet aliquam error impedit exercitationem.
                         <br>
                         <br>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, quam odio? Omnis error voluptatem dolor hic voluptas eaque minus rem laudantium rerum delectus quibusdam, aperiam consequuntur, consectetur sapiente fugiat nemo.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, quam odio?.
                         <br>
                         <br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis autem magnam facere iusto quos, quod, animi itaque accusantium.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis autem magnam.
                     </p>
                     <h5>T. Johnson</h5>
                 </div>
