@@ -18,9 +18,9 @@
                 </div>
                 <div class="col-xs-6">
                     <form action="">
-                        <input type="text" placeholder="Name" name="firstname">
-                        <input type="email" placeholder="Email" name="email">
-                        <button class="uppercase">
+                        <input class="input-style" type="text" placeholder="Name" name="firstname">
+                        <input class="input-style" type="email" placeholder="Email" name="email">
+                        <button>
                             subscribe
                         </button>
                     </form>
@@ -55,6 +55,8 @@ export default {
 
                 input{
                     width: 100%;
+                    color: $white;
+                    background-color: rgba($white, $alpha: .1);
                 }
 
                 button{

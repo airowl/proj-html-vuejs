@@ -146,13 +146,11 @@ div.heading-without-btn{
 //! FORM INPUT & BTN SUBMIT
 form{
 
-    input{
+    .input-style{
         margin-bottom: 1rem;
         border-radius: .3rem;
         border: none;
         padding: 1rem;
-        background-color: rgba($white, $alpha: .1);
-        color: $white;
         font-family: 'Montserrat', sans-serif;
     }
 
@@ -164,6 +162,7 @@ form{
         display: inline-block;
         background-color: $blue-lagoon;
         font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
     }
 }
 
