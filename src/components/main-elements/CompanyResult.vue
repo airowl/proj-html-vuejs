@@ -7,7 +7,7 @@
             <h2 class="text-white"><span class="shown">Result</span> in Numbers</h2>
             <div class="container">
                 <ul>
-                    <li v-for="(element, index) in dataResults" :key="index">
+                    <li v-for="(element, index) in elementDataResults" :key="index">
                         <p class="number">{{element.number}}</p>
                         <h3 class="text-white">{{element.text}}</h3>
                     </li>
@@ -21,27 +21,8 @@
 <script>
 export default {
     name: 'sectionCompanyResult',
-    data: function(){
-        return{
-            dataResults: [
-                {
-                    number: 128,
-                    text: 'Certifications'
-                },
-                {
-                    number: 230,
-                    text: 'Employees'
-                },
-                {
-                    number: 517,
-                    text: 'Customers'
-                },
-                {
-                    number: 94,
-                    text: 'Countries Served'
-                },
-            ]
-        }
+    props: {
+        elementDataResults: Array
     }
 }
 </script>

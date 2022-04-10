@@ -2,7 +2,9 @@
     <div id="card-feature">
         <div class="icons">
             <span class="icon-left"><i class="fa" :class="element.iconName"></i></span>
-            <i class="fas fa-arrow-right"></i>
+            <a :href="element.url" class="icon-right text-blue-lagoon">
+                <i class="fas fa-arrow-right"></i>
+            </a>
         </div>
         <h3 class="text-white">{{element.title}}</h3>
         <p class="text-white">{{element.description}}</p>

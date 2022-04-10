@@ -27,7 +27,7 @@
 
             <div id="features-cards" class="row">
                 <CardFeature 
-                    v-for="(element, index) in featuresElements"
+                    v-for="(element, index) in elementFeatures"
                     :key="index"
                     :element="element"
                 />
@@ -44,41 +44,8 @@ export default {
     components: {
         CardFeature
     },
-    data: function(){
-        return{
-            featuresElements: [
-                {
-                    iconName: 'fa-desktop',
-                    title: 'Audit & Assurance',
-                    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit'
-                },
-                {
-                    iconName: 'fa-briefcase',
-                    title: 'Financial Advisory',
-                    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit'
-                },
-                {
-                    iconName: 'fa-chart-simple',
-                    title: 'Analytics and M&A',
-                    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit'
-                },
-                {
-                    iconName: 'fa-plane-up',
-                    title: 'Middle Marketing',
-                    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit'
-                },
-                {
-                    iconName: 'fa-earth-asia',
-                    title: 'Legal Consulting',
-                    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit'
-                },
-                {
-                    iconName: 'fa-folder-open',
-                    title: 'Regulatory Risk',
-                    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit'
-                }
-            ]
-        }
+    props: {
+        elementFeatures: Array
     }
 }
 </script>

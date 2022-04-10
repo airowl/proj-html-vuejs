@@ -17,7 +17,7 @@
                     </p>
                     <div class="gallery-team row">
                         <CardMember 
-                            v-for="(element, index) in teamMembers"
+                            v-for="(element, index) in elementTeam"
                             :key="index"
                             :element="element"
                         />
@@ -51,91 +51,8 @@ export default {
     components: {
         CardMember
     },
-    data: function(){
-        return{
-            teamMembers: [
-                {
-                    profilePhoto: require('../../assets/images/team-1.jpg'),
-                    firstName: 'david',
-                    lastName: 'cooper',
-                    role: 'cto & co-founder',
-                    socialLinks: [
-                        {
-                            socialName: 'Facebook',
-                            urlProfile: '#'
-                        },
-                        {
-                            socialName: 'Twitter',
-                            urlProfile: ''
-                        },
-                        {
-                            socialName: 'Linked-In',
-                            urlProfile: '#'
-                        }
-                    ]
-                },
-                {
-                    profilePhoto: require('../../assets/images/team-3.jpg'),
-                    firstName: 'oliver',
-                    lastName: 'jones',
-                    role: 'chief procurement',
-                    socialLinks: [
-                        {
-                            socialName: 'Facebook',
-                            urlProfile: '#'
-                        },
-                        {
-                            socialName: 'Twitter',
-                            urlProfile: ''
-                        },
-                        {
-                            socialName: 'Linked-In',
-                            urlProfile: '#'
-                        }
-                    ]
-                },
-                {
-                    profilePhoto: require('../../assets/images/team-2.jpg'),
-                    firstName: 'emma',
-                    lastName: 'lopez',
-                    role: 'chief marketing',
-                    socialLinks: [
-                        {
-                            socialName: 'Facebook',
-                            urlProfile: '#'
-                        },
-                        {
-                            socialName: 'Twitter',
-                            urlProfile: ''
-                        },
-                        {
-                            socialName: 'Linked-In',
-                            urlProfile: '#'
-                        }
-                    ]
-                },
-                {
-                    profilePhoto: require('../../assets/images/team-4.jpg'),
-                    firstName: 't.',
-                    lastName: 'johnson',
-                    role: 'ceo & president',
-                    socialLinks: [
-                        {
-                            socialName: 'Facebook',
-                            urlProfile: '#'
-                        },
-                        {
-                            socialName: 'Twitter',
-                            urlProfile: ''
-                        },
-                        {
-                            socialName: 'Linked-In',
-                            urlProfile: '#'
-                        }
-                    ]
-                }
-            ]
-        }
+    props: {
+        elementTeam: Array
     }
 }
 </script>
