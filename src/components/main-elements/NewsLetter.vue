@@ -55,24 +55,10 @@ export default {
 
                 input{
                     width: 100%;
-                    margin-bottom: 1rem;
-                    border-radius: .3rem;
-                    border: none;
-                    padding: 1rem;
-                    background-color: rgba($white, $alpha: .1);
-                    color: $white;
-                    font-family: 'Montserrat', sans-serif;
                 }
 
                 button{
                     align-self: flex-start;
-                    padding: .75rem 1.3rem;
-                    color: $white;
-                    border: none;
-                    border-radius: .2rem;
-                    display: inline-block;
-                    background-color: $blue-lagoon;
-                    font-family: 'Montserrat', sans-serif;
                 }
             }
         }     
