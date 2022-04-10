@@ -1,6 +1,14 @@
 <template>
     <section id="footer-bottom">
-        <!-- 2 col flex con justify content space between -->
+        <div class="container">
+            <p>
+                Enjoy the low price. We are tracking any intention of piracy.
+            </p>
+            <p>
+                NEXTGEN is Proudly Powered by Airowl
+                </p>
+        </div>
+        
     </section>
 </template>
 
@@ -11,5 +19,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../assets/scss/style.scss';
+
+    section#footer-bottom{
+        background-color: $wood-smoke;
+        color: $white;
+        padding: 2rem 0;
+
+        div.container{
+            @include flex(row, space-between, center);
+        }
+        
+    }
 
 </style>
