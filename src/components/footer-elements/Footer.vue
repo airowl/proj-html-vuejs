@@ -1,7 +1,10 @@
 <template>
     <footer>
         <!-- FOOTER TOP -->
-        <FooterTop />
+        <FooterTop 
+            :aboutsLinks="aboutsList"
+            :supportsLinks="supportsList"
+        />
         <!-- FOOTER BOTTOM -->
         <FooterBottom />
     </footer>

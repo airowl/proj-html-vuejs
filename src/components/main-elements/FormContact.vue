@@ -48,7 +48,7 @@
                     </div>
                     <div class="data">
                         <a href="#" class="icon">
-                            <i class="fa-solid fa-envelope"></i>  
+                            <i class="fa-solid fa-envelope"></i>
                         </a>
                         <span class="text-blue-lagoon">hello@example.com</span>
                     </div>
@@ -76,7 +76,7 @@ export default {
 @import '../../assets/scss/style.scss';
 
     section#form-contact{
-        padding: 10rem 0;
+        padding: 8rem 0;
 
         form{
             @include flex(row, space-between, center);
