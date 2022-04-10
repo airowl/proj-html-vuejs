@@ -5,11 +5,14 @@
     <Header />
 
     <!-- MAIN -->
-    <Main />
+    <Main 
+      @features="getFeatures"
+    />
 
     <!-- FOOTER -->
-    <Footer />
-    
+    <Footer 
+      :featuresElements="features"
+    />
   </div>
 </template>
 
@@ -24,6 +27,16 @@ export default {
     Header,
     Main,
     Footer
+  },
+  data: function(){
+    return{
+      features: [],
+    }
+  },
+  methods: {
+    getFeatures(arrayObj){
+      this.features = arrayObj
+    }
   }
 }
 </script>

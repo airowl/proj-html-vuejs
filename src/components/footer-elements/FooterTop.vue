@@ -38,7 +38,12 @@
                     <div class="wrapper">
                         <h3>Services</h3>
                         <ul>
-                            <li></li>
+                            <li v-for="(element, index) in featuresLinks" :key="index">
+                                <i class="fa-solid fa-chevron-right"></i>
+                                <a :href="element.url" class="text-white">
+                                    {{element.title}}
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -68,7 +73,8 @@ export default {
     name: 'footerTop',
     props: {
         aboutsLinks: Array,
-        supportsLinks: Array
+        supportsLinks: Array,
+        featuresLinks: Array
     }
 }
 </script>

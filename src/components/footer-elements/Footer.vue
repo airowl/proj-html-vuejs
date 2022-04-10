@@ -4,6 +4,7 @@
         <FooterTop 
             :aboutsLinks="aboutsList"
             :supportsLinks="supportsList"
+            :featuresLinks="featuresElements"
         />
         <!-- FOOTER BOTTOM -->
         <FooterBottom />
@@ -76,6 +77,9 @@ export default {
                 }
             ]
         }
+    },
+    props: {
+        featuresElements: Array
     }
 }
 </script>

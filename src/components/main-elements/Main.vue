@@ -214,6 +214,9 @@ export default {
                 }
             ]
         }
+    },
+    created(){
+        this.$emit('features', this.featuresElements)
     }
 }
 </script>
