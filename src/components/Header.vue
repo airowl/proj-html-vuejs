@@ -11,7 +11,7 @@
                     <p>
                         <i class="fa-solid fa-phone"></i>  
                         +1 (305) 1234-5678
-                        </p>
+                    </p>
                     <p>
                         <i class="fa-solid fa-envelope"></i>  
                         hello@example.com

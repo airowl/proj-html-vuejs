@@ -5,8 +5,8 @@
                 Enjoy the low price. We are tracking any intention of piracy.
             </p>
             <p>
-                NEXTGEN is Proudly Powered by Airowl
-                </p>
+                2020 NEXGEN is Proudly Powered by <a href="#" class="text-blue-lagoon">Codings</a>.
+            </p>
         </div>
         
     </section>
