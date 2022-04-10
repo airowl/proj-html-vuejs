@@ -22,7 +22,7 @@ export default {
         color: $white;
         position: relative;
         width: calc((100% / 3) - 1rem);
-        height: 25rem;
+        height: 20rem;
         border-radius: 1rem;
         overflow: hidden;
 
