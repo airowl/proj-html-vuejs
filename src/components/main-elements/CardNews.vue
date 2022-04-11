@@ -1,8 +1,12 @@
 <template>
     <div id="card-news">
+
         <img :src="element.bgImage" :alt="`News n. ${element.id}`">
+
         <div class="overlay"></div>
+
         <div class="card-content">
+            
             <div class="data-news">
                 <span>
                     <i class="fa-regular fa-user"></i>
@@ -17,12 +21,14 @@
                     </span>
                 </span>
             </div>
+
             <div>
                 <h3>{{element.text}}</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             </div>
             
         </div>
+
     </div>
 </template>
 
