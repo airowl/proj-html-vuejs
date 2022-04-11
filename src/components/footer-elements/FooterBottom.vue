@@ -5,7 +5,7 @@
                 Enjoy the low price. We are tracking any intention of piracy.
             </p>
             <p>
-                2020 NEXGEN is Proudly Powered by <a href="#" class="text-blue-lagoon">Codings</a>.
+                2020 NEXGEN is Proudly Powered by <a href="#">Codings</a>.
             </p>
         </div>
         
@@ -23,11 +23,18 @@ export default {
 
     section#footer-bottom{
         background-color: $wood-smoke;
-        color: $white;
         padding: 2rem 0;
 
         div.container{
             @include flex(row, space-between, center);
+
+            p{
+                color: $white;
+
+                a{
+                    color: $blue-lagoon;
+                }
+            }
         }
         
     }
