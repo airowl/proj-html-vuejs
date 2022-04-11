@@ -22,7 +22,7 @@ export default {
 @import '../../assets/scss/style.scss';
 
     section#footer-bottom{
-        background-color: $wood-smoke;
+        background-color: black;
         padding: 2rem 0;
 
         div.container{
