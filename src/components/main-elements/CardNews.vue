@@ -2,7 +2,27 @@
     <div id="card-news">
         <img :src="element.bgImage" :alt="`News n. ${element.id}`">
         <div class="overlay"></div>
-        <h3>{{element.text}}</h3>
+        <div class="card-content">
+            <div class="data-news">
+                <span>
+                    <i class="fa-regular fa-user"></i>
+                    <span class="name">
+                        {{element.author}}
+                    </span>
+                </span>
+                <span>
+                    <i class="fa-regular fa-clock"></i>
+                    <span class="date">
+                        {{element.datePublish}}
+                    </span>
+                </span>
+            </div>
+            <div>
+                <h3>{{element.text}}</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            
+        </div>
     </div>
 </template>
 
@@ -37,12 +57,38 @@ export default {
             z-index: 0;
         }
 
-        h3{
+        div.card-content{
             position: absolute;
             z-index: 2;
-            bottom: 2.5rem;
-            font-size: 1.5rem;
+            width: 100%;
+            height: 100%;
             text-align: center;
+            padding: 2.5rem 1.5rem;
+            @include flex(column, space-between, center);
+
+            &:hover div.data-news,
+            &:hover p{
+                display: block;
+                opacity: 1;
+            }
+
+            div.data-news{
+                opacity: 0;
+
+                > span:first-child{
+                    margin-right: 1.5rem;
+                }
+
+                i{
+                    margin-right: .3rem;
+                }
+            }
+
+            p{
+                color: $white;
+                margin-top: 1rem;
+                display: none;
+            }
         }
     }
 

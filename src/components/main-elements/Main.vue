@@ -223,16 +223,22 @@ export default {
             newsList: [
                 {
                     id: 1,
+                    author: 'Andrea Miller',
+                    datePublish: '2 Days Ago',
                     bgImage: require('../../assets/images/news-1.jpg'),
                     text: 'Increasing creativity is possible for everyone'
                 },
                 {
                     id: 2,
+                    author: 'Mike Salmone',
+                    datePublish: 'One Eternity',
                     bgImage: require('../../assets/images/news-2.jpg'),
                     text: 'Because market research in part of the business plan'
                 },
                 {
                     id: 3,
+                    author: 'Harry Potter',
+                    datePublish: '3 Weeks Ago',
                     bgImage: require('../../assets/images/news-3.jpg'),
                     text: 'Working from home is now a trend'
                 }

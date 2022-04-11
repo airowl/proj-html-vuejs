@@ -9,6 +9,7 @@
         </div>
 
         <h3 class="text-white">{{element.title}}</h3>
+        
         <p class="text-white">{{element.description}}</p>
         
     </div>
