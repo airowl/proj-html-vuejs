@@ -42,18 +42,11 @@ h3{
 p{
     font-size: $fnt-p-md;
     font-weight: 300;
+    color: $salt-box;
 }
 
 .text-white{
     color: $white !important;
-}
-
-.text-grey{
-    color: $abbey;
-}
-
-.text-dark{
-    color: $wood-smoke;
 }
 
 .text-blue-lagoon{
@@ -103,7 +96,7 @@ span.shown{
 //! Paragrafi Unici
 p.uppercase{
     text-transform: uppercase;
-    color: $fountain-blue;
+    color: $surfie-green;
     font-weight: 600;
     font-size: $fnt-p-sm;
     margin-bottom: 1rem;
