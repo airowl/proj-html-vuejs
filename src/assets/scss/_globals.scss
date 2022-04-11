@@ -169,6 +169,12 @@ form{
         background-color: $blue-lagoon;
         font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
+        cursor: pointer;
+        transition: $standard;
+
+        &:hover{
+            background-color: $fountain-blue;
+        }
     }
 }
 
