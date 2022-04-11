@@ -44,23 +44,24 @@
                         <a href="#" class="icon">
                             <i class="fa-solid fa-phone"></i>
                         </a>
-                        <span class="text-blue-lagoon">+1 (305) 1234-5678</span>
+                        <span>+1 (305) 1234-5678</span>
                     </div>
                     <div class="data">
                         <a href="#" class="icon">
                             <i class="fa-solid fa-envelope"></i>
                         </a>
-                        <span class="text-blue-lagoon">hello@example.com</span>
+                        <span>hello@example.com</span>
                     </div>
                     <div class="data">
                         <a href="#" class="icon">
                             <i class="fa-solid fa-location-dot"></i>
                         </a>
-                        <span class="text-blue-lagoon">Main Avenue, 987</span>
+                        <span>Main Avenue, 987</span>
                     </div>
 
-                    <a href="#" class="text-blue-lagoon btn empty">view map</a>
+                    <a href="#" class="btn empty">view map</a>
                 </div>
+
             </div>
         </div>
     </section>
@@ -120,11 +121,13 @@ export default {
 
                 span{
                     margin-left: 1rem;
+                    color: $blue-lagoon;
                 }
             }
 
             a.btn{
                 margin-top: 2rem;
+                color: $blue-lagoon;
             }
 
             

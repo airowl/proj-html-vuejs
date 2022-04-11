@@ -102,6 +102,10 @@ export default {
 
             div.data{
                 margin-bottom: 1rem;
+
+                i{
+                    margin-right: 1rem;
+                }
                 
             }
         }
