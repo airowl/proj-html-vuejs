@@ -2,9 +2,13 @@
     <section id="footer-top">
         <div class="container">
             <div class="row">
+
                 <div class="col-xs-3" id="data-company">
+
                     <img src="../../assets/images/nexgen-logo.svg" alt="Logo company">
+
                     <p>A Functional HTML Template for Corporate & Business</p>
+
                     <div class="data">
                         <i class="fa-solid fa-phone"></i>
                         <span>+1 (305) 1234-5678</span>
@@ -17,7 +21,9 @@
                         <i class="fa-solid fa-location-dot"></i>
                         <span>Main Avenue, 987</span>
                     </div>
+
                     <a href="#" class="btn empty text-white">get in touch</a>
+
                 </div>
 
                 <div class="col-xs-3">
@@ -60,7 +66,6 @@
                             </li>
                         </ul>
                     </div>
-                    
                 </div>
 
             </div>
@@ -98,6 +103,7 @@ export default {
 
             p{
                 margin-bottom: 1rem;
+                color: $white;
             }
 
             div.data{
