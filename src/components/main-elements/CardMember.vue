@@ -1,9 +1,13 @@
 <template>
     <div id="card-member">
+
         <img :src="element.profilePhoto" :alt="element.firstName + element.lastName">
+
         <div class="data-member">
             <h5>{{getFirstLetterUpper(element.firstName)}} {{getFirstLetterUpper(element.lastName)}}</h5>
+
             <p class="uppercase">{{element.role}}</p>
+
             <div class="social-links">
                 <a :href="element.socialLinks[0].urlProfile" class="icon">
                     <i class="fa-brands fa-facebook-f"></i>
@@ -15,6 +19,7 @@
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
             </div>
+            
         </div>
 
     </div>
@@ -56,7 +61,7 @@ export default {
             }
 
             p{
-                color: $silver-sand;
+                color: $salt-box;
                 font-weight: 400;
             }
 

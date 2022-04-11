@@ -1,18 +1,20 @@
 <template>
     <section id="team">
         <div class="container">
+
             <div class="row">
                 <p class="uppercase">
                     we like what we do
                 </p>
             </div>
+
             <div class="row">
                 <div class="col-xs-8">
                     <h2>
                         <span class="shown text-blue-lagoon">Team</span> 
                         of Experts
                     </h2>
-                    <p class="text-grey">
+                    <p>
                         Ethics and integrity are the bases on which out professionals build their careers. <br> They are fundamentals that become daily attitudes.
                     </p>
                     <div class="gallery-team row">
@@ -39,6 +41,7 @@
                 </div>
 
             </div>
+
         </div>
     </section>
 </template>
@@ -67,7 +70,7 @@ export default {
             margin-bottom: 1rem;
         }
 
-        p.text-grey{
+        p{
             margin-top: 1rem;
         }
 
@@ -87,6 +90,7 @@ export default {
 
             p{
                 margin-bottom: 1rem;
+                color: $white;
             }
 
         }
