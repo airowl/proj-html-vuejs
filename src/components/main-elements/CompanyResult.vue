@@ -1,10 +1,22 @@
 <template>
     <section id="company-result">
+
         <img src="../../assets/images/city.jpg" alt="Background City">
+
         <div class="overlay"></div>
+
+        <!-- DATA RESULTS -->
         <div class="company-result-contents">
-            <p class="uppercase">what are we doing</p>
-            <h2 class="text-white"><span class="shown">Result</span> in Numbers</h2>
+
+            <p class="uppercase">
+                what are we doing
+            </p>
+
+            <h2 class="text-white">
+                <span class="shown">Result</span> 
+                in Numbers
+            </h2>
+
             <div class="container">
                 <ul>
                     <li v-for="(element, index) in elementDataResults" :key="index">
@@ -13,6 +25,7 @@
                     </li>
                 </ul>
             </div>
+
         </div>
         
     </section>
@@ -44,6 +57,10 @@ section#company-result{
         filter: grayscale(100%);
     }
 
+    div.overlay{
+        background-color: rgba(0,0,0,0.7);
+    }
+
     div.company-result-contents{
         position: relative;
         z-index: 2;
@@ -57,8 +74,8 @@ section#company-result{
             margin-top: 6rem;
 
             p.number{
-                font-size: 1.5rem;
-                color: $fountain-blue;
+                font-size: 2rem;
+                color: $surfie-green;
                 font-weight: 600;
                 margin-bottom: .7rem;
             }
