@@ -31,7 +31,7 @@
                     </form>
                 </div>
 
-                <div class="col-xs-4">
+                <div class="col-xs-4" id="col-right-side">
                     <h3>Example Inc.</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -109,7 +109,7 @@ export default {
             }
         }
 
-        div.col-xs-4{
+        div#col-right-side{
             padding-left: 2rem;
 
             h3{
@@ -128,14 +128,13 @@ export default {
             a.btn{
                 margin-top: 2rem;
                 color: $blue-lagoon;
+                transition: $standard;
+
+                &:hover{
+                    color: $white;
+                }
             }
-
-            
-
         }
-        
-
-        
     }
 
 
