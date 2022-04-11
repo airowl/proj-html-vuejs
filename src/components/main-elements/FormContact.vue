@@ -2,13 +2,15 @@
     <section id="form-contact">
         <div class="container">
             <div class="row">
+
+                <!-- HEADING -->
                 <div class="col-xs-8">
                     <div id="form-contact-heading" class="heading-without-btn">
 
                         <p class="uppercase">send a message</p>
                         <h2>
                             Get in 
-                            <span class="shown">Touch</span>
+                            <span class="shown text-blue-lagoon">Touch</span>
                         </h2>
                         <p class="description">
                             We will respond to your message as soon as possible.
@@ -16,6 +18,7 @@
                         
                     </div>
 
+                    <!-- FORM -->
                     <form action="">
                         <input class="input-style input-name" type="text" placeholder="Name" name="firstName">
                         <input class="input-style" type="email" placeholder="Email" name="email">
@@ -31,6 +34,7 @@
                     </form>
                 </div>
 
+                <!-- RIGHT SIDE -->
                 <div class="col-xs-4" id="col-right-side">
                     <h3>Example Inc.</h3>
                     <p>
@@ -80,9 +84,9 @@ export default {
         padding: 8rem 0;
 
         form{
-            @include flex(row, space-between, center);
-            flex-wrap: wrap;
             margin-top: 3rem;
+            flex-wrap: wrap;
+            @include flex(row, space-between, center);
 
             input{
                 width: calc(50% - 1rem);

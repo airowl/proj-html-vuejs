@@ -2,6 +2,7 @@
     <section id="features">
         <div class="container">
 
+            <!-- HEADING -->
             <div id="features-text" class="heading-with-btn">
 
                 <p class="uppercase">
@@ -25,6 +26,7 @@
                 
             </div>
 
+            <!-- CARDS -->
             <div id="features-cards" class="row">
                 <CardFeature 
                     v-for="(element, index) in elementFeatures"
@@ -55,8 +57,8 @@ export default {
 
     section#features{
         padding: 10rem 0;
-        background-color: $wood-smoke;
         color: $white;
+        background-color: $wood-smoke;
 
         #features-cards{
             gap: 1.5rem;

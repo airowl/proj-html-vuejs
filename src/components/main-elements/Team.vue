@@ -7,8 +7,9 @@
                     we like what we do
                 </p>
             </div>
-
             <div class="row">
+
+                <!-- HEADING -->
                 <div class="col-xs-8">
                     <h2>
                         <span class="shown text-blue-lagoon">Team</span> 
@@ -26,6 +27,7 @@
                     </div>
                 </div>
 
+                <!-- SPEECH SECTION -->
                 <div class="col-xs-4 text-white" id="president-speech">
                     <h3 >President Speech</h3>
                     <p>
@@ -80,9 +82,9 @@ export default {
         }
 
         #president-speech{
+            padding: 4rem 2rem;
             background-color: $blue-lagoon;
             border-radius: .5rem;
-            padding: 4rem 2rem;
 
             h3{
                 margin-bottom: 1rem;

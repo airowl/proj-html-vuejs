@@ -1,9 +1,13 @@
 <template>
     <section id="footer-bottom">
         <div class="container">
+
+            <!-- LEFT SIDE -->
             <p>
                 Enjoy the low price. We are tracking any intention of piracy.
             </p>
+
+            <!-- RIGHT SIDE -->
             <p>
                 2020 NEXGEN is Proudly Powered by <a href="#">Codings</a>.
             </p>
@@ -22,8 +26,8 @@ export default {
 @import '../../assets/scss/style.scss';
 
     section#footer-bottom{
-        background-color: black;
         padding: 2rem 0;
+        background-color: black;
 
         div.container{
             @include flex(row, space-between, center);

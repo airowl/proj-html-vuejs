@@ -3,6 +3,7 @@
         <div class="container">
             <div class="row">
 
+                <!-- DATA COMPANY -->
                 <div class="col-xs-3" id="data-company">
 
                     <img src="../../assets/images/nexgen-logo.svg" alt="Logo company">
@@ -26,6 +27,7 @@
 
                 </div>
 
+                <!-- ABOUT's LINKS -->
                 <div class="col-xs-3">
                     <div class="wrapper">
                     <h3>About</h3>
@@ -40,6 +42,7 @@
                     </div>
                 </div>
 
+                <!-- SERIVICE's LINKS -->
                 <div class="col-xs-3">
                     <div class="wrapper">
                         <h3>Services</h3>
@@ -54,6 +57,7 @@
                     </div>
                 </div>
 
+                <!-- SUPPORT's LINKS -->
                 <div class="col-xs-3">
                     <div class="wrapper">
                         <h3>Support</h3>
@@ -88,17 +92,17 @@ export default {
 @import '../../assets/scss/style.scss';
 
     section#footer-top{
+        padding: 10rem 0;
+        color: $white;
         background-image: url(../../assets/images/bg-7.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        padding: 10rem 0;
-        color: $white;
 
         div#data-company{
             img{
-                height: 3rem;
                 margin-bottom: 1rem;
+                height: 3rem;
             }
 
             p{
@@ -117,11 +121,11 @@ export default {
         }
         
         div.wrapper{
-            background-color: rgba($white, $alpha: .1);
             margin-left: 2rem;
+            padding: 2rem 3rem;
             height: 100%;
             border-radius: 1rem;
-            padding: 2rem 3rem;
+            background-color: rgba($gray-nurse, $alpha: .03);
 
             h3{
                 margin-bottom: 1rem;

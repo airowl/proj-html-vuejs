@@ -1,10 +1,11 @@
 <template>
     <div id="card-news">
 
+        <!-- BACKGROUND IMAGE -->
         <img :src="element.bgImage" :alt="`News n. ${element.id}`">
-
         <div class="overlay"></div>
 
+        <!-- CONTENT -->
         <div class="card-content">
             
             <div class="data-news">
@@ -21,7 +22,6 @@
                     </span>
                 </span>
             </div>
-
             <div>
                 <h3>{{element.text}}</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
@@ -45,22 +45,22 @@ export default {
 @import '../../assets/scss/style.scss';
 
     div#card-news{
-        color: $white;
         position: relative;
         width: calc((100% / 3) - 1rem);
         height: 20rem;
+        color: $white;
         border-radius: 1rem;
         overflow: hidden;
 
         img{
             position: absolute;
-            width: 100%;
-            height: 100%;
             left: 0;
             right: 0;
             bottom: 0;
             top: 0;
             z-index: 0;
+            width: 100%;
+            height: 100%;
         }
 
         div.card-content{
@@ -91,9 +91,9 @@ export default {
             }
 
             p{
-                color: $white;
                 margin-top: 1rem;
                 display: none;
+                color: $white;
             }
         }
     }

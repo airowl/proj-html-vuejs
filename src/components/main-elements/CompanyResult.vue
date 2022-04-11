@@ -1,11 +1,11 @@
 <template>
     <section id="company-result">
 
+        <!-- BACKGROUND IMAGE -->
         <img src="../../assets/images/city.jpg" alt="Background City">
-
         <div class="overlay"></div>
 
-        <!-- DATA RESULTS -->
+        <!-- CONTENTS -->
         <div class="company-result-contents">
 
             <p class="uppercase">
@@ -44,10 +44,10 @@ export default {
 @import '../../assets/scss/style.scss';
 
 section#company-result{
-    text-align: center;
     position: relative;
-    overflow: hidden;
     padding: 8rem;
+    text-align: center;
+    overflow: hidden;
 
     img{
         position: absolute;
@@ -74,10 +74,10 @@ section#company-result{
             margin-top: 6rem;
 
             p.number{
+                margin-bottom: .7rem;
                 font-size: 2rem;
                 color: $surfie-green;
                 font-weight: 600;
-                margin-bottom: .7rem;
             }
         }
     }

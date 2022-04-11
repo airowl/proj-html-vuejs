@@ -2,6 +2,7 @@
     <section id="latest-news">
         <div class="container">
 
+            <!-- HEADING -->
             <div id="latest-news-text" class="heading-with-btn">
 
                 <p class="uppercase">our editorial content</p>
@@ -21,6 +22,7 @@
                 
             </div>
 
+            <!-- CARDS -->
             <div class="gallery-news">
                 <CardNews 
                     v-for="(element, index) in elementNews"
@@ -51,8 +53,8 @@ export default {
 @import '../../assets/scss/style.scss';
 
     section#latest-news{
-        background-color: rgba($silver-sand, $alpha: .2);
         padding: 8rem 0;
+        background-color: rgba($silver-sand, $alpha: .2);
 
         .gallery-news{
             @include flex(row, space-between, center)

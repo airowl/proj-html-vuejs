@@ -3,6 +3,7 @@
 
         <div class="overlay"></div> 
 
+        <!-- NAVBAR -->
         <header>
             <div class="container">
                 <nav class="row">
@@ -38,7 +39,7 @@
             
         </header>
 
-        <!-- hero content -->
+        <!-- HERO CONTENT -->
         <div id="hero-content">
             <div class="hero-elements">
                 <h1>
@@ -76,13 +77,13 @@ export default {
 @import '../../assets/scss/style.scss';
 
     section#hero{
-        background-image: url(../../assets/images/bg-2.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
+        position: relative;
         width: 100vw;
         height: calc(100vh - 46.6px);
         color: $white;
-        position: relative;
+        background-image: url(../../assets/images/bg-2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
 
         header, div#hero-content{
             position: relative;
@@ -116,12 +117,12 @@ export default {
             height: calc(100% - 85px);
 
             div.hero-elements{
-                text-align: center;
                 position: absolute;
                 top: 45%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 width: 30%;
+                text-align: center;
 
                 p{
                     margin: 2rem 0;

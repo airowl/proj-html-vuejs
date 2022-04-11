@@ -3,6 +3,7 @@
         <div class="container">
             <div class="row">
 
+                <!-- HEADING -->
                 <div class="col-xs-6">
 
                     <div id="news-letter-heading" class="heading-without-btn">
@@ -20,6 +21,7 @@
 
                 </div>
 
+                <!-- SUB FORM NEWSLETTER -->
                 <div class="col-xs-6">
 
                     <form action="">
@@ -48,8 +50,8 @@ export default {
 @import '../../assets/scss/style.scss';
 
     section#news-letter{
-        background-color: $wood-smoke;
         padding: 8rem 0;
+        background-color: $wood-smoke;
 
         div.container{
             width: 50%;

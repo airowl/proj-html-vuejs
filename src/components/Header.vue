@@ -53,29 +53,26 @@ export default {
 @import '../assets/scss/style.scss';
 
     header{
-        background-color: $shark;
         color: $silver-sand;
         font-size: $fnt-p-sm;
-
-        div.container{
+        background-color: $shark;
             
-            div.row{
-                padding: .8rem 0;
+        div.row{
+            padding: .8rem 0;
 
-                div.data {
-                    margin-right: 1.75rem;
+            div.data {
+                margin-right: 1.75rem;
 
-                    i{
-                        margin-right: .5rem;
-                    }
+                i{
+                    margin-right: .5rem;
                 }
+            }
 
-                div#header-right-side{
-                    @include flex(row, end, center);
+            div#header-right-side{
+                @include flex(row, end, center);
 
-                    .header-social-links > i:nth-child(2){
-                        margin: 0 2rem;
-                    }
+                .header-social-links > i:nth-child(2){
+                    margin: 0 2rem;
                 }
             }
         }

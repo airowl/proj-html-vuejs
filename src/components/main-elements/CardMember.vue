@@ -1,8 +1,10 @@
 <template>
     <div id="card-member">
 
+        <!-- PHOTO MEMBER -->
         <img :src="element.profilePhoto" :alt="element.firstName + element.lastName">
 
+        <!-- DATA MEMBER -->
         <div class="data-member">
             <h5>{{getFirstLetterUpper(element.firstName)}} {{getFirstLetterUpper(element.lastName)}}</h5>
 
@@ -47,9 +49,9 @@ export default {
         width: calc((100% / 2) - 3rem);
         
         img{
+            margin-right: 1.5rem;
             width: 25%;
             border-radius: .3rem;
-            margin-right: 1.5rem;
         }
 
         div.data-member{

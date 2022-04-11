@@ -55,17 +55,17 @@ p{
 
 //! BOTTONI di due tipologia
 a.btn{
-    text-transform: uppercase;
     padding: .75rem 1.3rem;
-    border: none;
-    border-radius: .2rem;
     display: inline-block;
     color: $white;
+    text-transform: uppercase;
+    border-radius: .2rem;
+    border: none;
 }
 // empty
 a.btn.empty{
-    border: 1px solid $blue-lagoon;
     background: transparent;
+    border: 1px solid $blue-lagoon;
     transition: $standard;
 
     &:hover{
@@ -85,32 +85,32 @@ a.btn.full{
 
 //! STRINGA EVIDENZIATA
 span.shown{
-    background-color: rgba($blue-lagoon, $alpha: .2);
     padding: 0 .5rem;
     border-radius: .2rem;
+    background-color: rgba($blue-lagoon, $alpha: .2);
 }
 
 
 //! OVERLAY (quando serve è già pronto)
 .overlay{
     position: absolute;
-    width: 100%; 
-    height: 100%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
     z-index: 1;
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
 }
 
 //! Paragrafi Unici
 p.uppercase{
+    margin-bottom: 1rem;
     text-transform: uppercase;
     color: $surfie-green;
     font-weight: 600;
     font-size: $fnt-p-sm;
-    margin-bottom: 1rem;
 }
 
 //! HEADING TITLE with Button
@@ -154,23 +154,23 @@ form{
 
     .input-style{
         margin-bottom: 1rem;
-        border-radius: .3rem;
-        border: none;
         padding: 1rem;
         font-family: 'Montserrat', sans-serif;
+        border-radius: .3rem;
+        border: none;
     }
 
     button{
         padding: .75rem 1.3rem;
-        color: $white;
-        border: none;
-        border-radius: .2rem;
         display: inline-block;
+        color: $white;
         background-color: $blue-lagoon;
         font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
-        cursor: pointer;
+        border: none;
+        border-radius: .2rem;
         transition: $standard;
+        cursor: pointer;
 
         &:hover{
             background-color: $fountain-blue;
@@ -184,11 +184,11 @@ a.icon{
     display: inline-block;
     width: 2.5rem;
     height: 2.5rem;
-    border-radius: 50%;
-    background-color: rgba($blue-lagoon, $alpha: .2);
     color: $blue-lagoon;
     text-align: center;
     line-height: 2.5rem;
+    border-radius: 50%;
+    background-color: rgba($blue-lagoon, $alpha: .2);
 }
 
 
