@@ -4,23 +4,23 @@
 
             <div id="features-text" class="heading-with-btn">
 
-                <p class="uppercase">our business areas</p>
+                <p class="uppercase">
+                    our business areas
+                </p>
                 <h2>
                     Excellence in 
                     <span class="shown">Services</span>
                 </h2>
 
                 <div class="p-btn">
-                    <div>
-                        <p class="text-white">
-                            We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of <br> experienced and renowned professionals. There are some options that you can hire.
-                        </p>
-                    </div>
-                    <div>
-                        <a href="#" class="btn empty uppercase">
-                            see all
-                        </a>
-                    </div>
+                    
+                    <p class="text-white">
+                        We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of <br> experienced and renowned professionals. There are some options that you can hire.
+                    </p>
+                    <a href="#" class="btn empty uppercase">
+                        see all
+                    </a>
+                    
                 </div>
                 
             </div>

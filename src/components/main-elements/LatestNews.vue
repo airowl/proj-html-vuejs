@@ -11,16 +11,16 @@
                 </h2>
 
                 <div class="p-btn">
-                    <div>
-                        <p>
-                            Every week we publish content about what is best in the business world.
-                        </p>
-                    </div>
-                    <div>
-                        <a href="#" class="btn full uppercase">
-                            see all
-                        </a>
-                    </div>
+                    
+                    <p>
+                        Every week we publish content about what is best in the business world.
+                    </p>
+                
+                
+                    <a href="#" class="btn full uppercase">
+                        see all
+                    </a>
+                    
                 </div>
                 
             </div>

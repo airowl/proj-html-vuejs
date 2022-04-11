@@ -66,10 +66,21 @@ a.btn{
 a.btn.empty{
     border: 1px solid $blue-lagoon;
     background: transparent;
+    transition: $standard;
+
+    &:hover{
+        background-color: $fountain-blue;
+        border: 1px solid $fountain-blue;
+    }
 }
 //full
 a.btn.full{
     background-color: $blue-lagoon;
+    transition: $standard;
+
+    &:hover{
+        background-color: $fountain-blue;
+    }
 }
 
 //! STRINGA EVIDENZIATA
@@ -116,6 +127,10 @@ div.heading-with-btn{
         p{
             color: $salt-box;
             font-size: $fnt-p-md;
+        }
+
+        a{
+            display: inline-block;
         }
     }
 }
