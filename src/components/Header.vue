@@ -55,6 +55,7 @@ export default {
     header{
         background-color: $shark;
         color: $silver-sand;
+        font-size: $fnt-p-sm;
 
         div.container{
             
@@ -70,7 +71,7 @@ export default {
                 }
 
                 div#header-right-side{
-                    @include flex(row, center, center);
+                    @include flex(row, end, center);
 
                     .header-social-links > i:nth-child(2){
                         margin: 0 2rem;

@@ -1,38 +1,52 @@
 <template>
     <section id="hero">
+
         <div class="overlay"></div> 
-        <!-- header -->
+
         <header>
             <div class="container">
                 <nav class="row">
-                    <div class="col-5">
+
+                    <!-- left side -->
+                    <div class="col-xs-5">
                         <img src="../../assets/images/nexgen-logo.svg" alt="Logo SVG">
                     </div>
-                    <ul class="col-7">
-                        <li v-for="(element, index) in navBarLinks" :key="index">
-                            <a :href="element.url" class="uppercase text-white">
-                                {{element.text}}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-white">
-                                <i class="fa-regular fa-user"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn full uppercase">get in touch</a>
-                        </li>
-                    </ul>
+
+                    <!-- right side -->
+                    <div class="col-xs-7" id="col-right">
+                        <ul>
+                            <li v-for="(element, index) in elementsNavBar" :key="index">
+                                <a :href="element.url" class="uppercase text-white">
+                                    {{element.text}}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">
+                                    <i class="fa-regular fa-user"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn full uppercase">get in touch</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    
+                    
                 </nav>
             </div>
             
         </header>
+
         <!-- hero content -->
         <div id="hero-content">
             <div class="hero-elements">
-                <h1>Financial Risk</h1>
-
-                <p>The right outcomes depend on continuous rigor in governance, models, and processes across the finance function.</p>
+                <h1>
+                    Financial Risk
+                </h1>
+                <p>
+                    The right outcomes depend on continuous rigor in governance, models, and processes across the finance function.
+                </p>
 
                 <div class="hero-buttons">
                     <a href="#" class="btn full">
@@ -45,43 +59,22 @@
 
             </div>
         </div>
+        
     </section>
 </template>
 
 <script>
 export default {
     name: 'sectionHero',
-    data: function(){
-        return{
-            navBarLinks: [
-                {
-                    text: 'home',
-                    url: '#'
-                },
-                {
-                    text: 'about',
-                    url: '#'
-                },
-                {
-                    text: 'services',
-                    url: '#'
-                },
-                {
-                    text: 'team',
-                    url: '#'
-                },
-                {
-                    text: 'blog',
-                    url: '#'
-                }
-            ]
-        }
+    props: {
+        elementsNavBar: Array
     }
 }
 </script>
 
 <style lang="scss" scoped>
 @import '../../assets/scss/style.scss';
+
     section#hero{
         background-image: url(../../assets/images/bg-2.jpg);
         background-size: cover;
@@ -96,10 +89,11 @@ export default {
             z-index: 1;
         }
 
+        // NAVBAR
         header{
 
             nav.row{
-                @include flex(row, space-between, center);
+                @include flex(row, end, center);
                 padding: 1rem 0;
 
                 img{
@@ -110,12 +104,14 @@ export default {
                     @include flex(row, center, center);
 
                     li:not(:last-child){
-                        margin-right: 3rem;
+                        margin-right: 2.5rem;
                     }
                 }
+                
             }
         }
 
+        // HERO CONTENT
         div#hero-content{
             height: calc(100% - 85px);
 
@@ -129,6 +125,7 @@ export default {
 
                 p{
                     margin: 2rem 0;
+                    color: $silver-sand;
                 }
 
                 div.hero-buttons{

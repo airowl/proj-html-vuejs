@@ -1,7 +1,9 @@
 <template>
     <main>
         <!-- section introduction -->
-        <Hero />
+        <Hero 
+            :elementsNavBar="navBarLinks"
+        />
 
         <!-- section introduction -->
         <CompanyIntro />
@@ -58,6 +60,28 @@ export default {
     },
     data: function(){
         return{
+            navBarLinks: [
+                {
+                    text: 'home',
+                    url: '#'
+                },
+                {
+                    text: 'about',
+                    url: '#'
+                },
+                {
+                    text: 'services',
+                    url: '#'
+                },
+                {
+                    text: 'team',
+                    url: '#'
+                },
+                {
+                    text: 'blog',
+                    url: '#'
+                }
+            ],
             dataResults: [
                 {
                     number: 128,
