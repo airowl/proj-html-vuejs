@@ -3,9 +3,26 @@
 
 @import './_variables.scss';
 
+// FIXED RULES
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
+
+li{
+    list-style-type: none;
+    font-size: $fnt-p-md;
+}
+
+a{
+    text-decoration: none;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+//! ELEMENTI MOLTO RIPETUTI o MOLTO USATI
 
 h1{
     font-size: $fnt-h-lg;
@@ -22,27 +39,9 @@ h3{
     font-weight: 600;
 }
 
-li{
-    list-style-type: none;
-}
-
-a{
-    text-decoration: none;
-}
-
-p, li{
+p{
     font-size: $fnt-p-md;
-}
-
-p.uppercase{
-    text-transform: uppercase;
-    color: $fountain-blue;
-    font-weight: 600;
-    font-size: $fnt-p-sm;
-}
-
-.uppercase{
-    text-transform: uppercase;
+    font-weight: 200;
 }
 
 .text-white{
@@ -61,6 +60,7 @@ p.uppercase{
     color: $blue-lagoon;
 }
 
+//! BOTTONI di due tipologia
 a.btn{
     text-transform: uppercase;
     padding: .75rem 1.3rem;
@@ -69,22 +69,25 @@ a.btn{
     display: inline-block;
     color: $white;
 }
-
+// empty
 a.btn.empty{
     border: 1px solid $blue-lagoon;
     background: transparent;
 }
-
+//full
 a.btn.full{
     background-color: $blue-lagoon;
 }
 
+//! STRINGA EVIDENZIATA
 span.shown{
     background-color: rgba($blue-lagoon, $alpha: .2);
     padding: 0 .5rem;
     border-radius: .2rem;
 }
 
+
+//! OVERLAY (quando serve è già pronto)
 .overlay{
     position: absolute;
     width: 100%; 
@@ -97,20 +100,20 @@ span.shown{
     z-index: 1;
 }
 
-@mixin flex($flex-direction, $justify-content, $align-items) {
-    display: flex;
-    flex-direction: $flex-direction;
-    justify-content: $justify-content;
-    align-items: $align-items;
+
+
+//! Paragrafi Unici
+p.uppercase{
+    text-transform: uppercase;
+    color: $fountain-blue;
+    font-weight: 600;
+    font-size: $fnt-p-sm;
+    margin-bottom: 1rem;
 }
 
 //! HEADING TITLE with Button
 div.heading-with-btn{
     margin-bottom: 4rem;
-    
-    p.uppercase{
-        margin-bottom: 1rem;
-    }
 
     h2{
         margin-bottom: 2rem;
@@ -128,10 +131,6 @@ div.heading-with-btn{
 
 //! HEADING TITLE without Button
 div.heading-without-btn{
-    
-    p.uppercase{
-        margin-bottom: 1rem;
-    }
 
     h2{
         margin-bottom: 2rem;
