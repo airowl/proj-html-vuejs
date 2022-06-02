@@ -105,7 +105,7 @@ export default {
                     @include flex(row, center, center);
 
                     li:not(:last-child){
-                        margin-right: 2.5rem;
+                        margin-right: 1.5rem;
                     }
                 }
                 
