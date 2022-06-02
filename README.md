@@ -1,5 +1,7 @@
 # proj-html-vuejs
 
+Preview live: https://proj-html-vuejs-boolean.netlify.app/
+
 ## Project setup
 ```
 npm install
